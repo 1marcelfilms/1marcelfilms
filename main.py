@@ -1,11 +1,21 @@
-import sys
+print("welcome to math calculator")
+owo = "+"
 
-args = list(sys.argv)
+number1 = input("number 1? ")
+owo = input("? ")
+number2 = input("number 2? ")
 
-def main(argv):
-    hello_world = "Hello World" # Set the hello_world variable
-    print(hello_world) # Print hello world
-    return 0
+if owo == "+":
+    math = float(number1) + float(number2)
+else:
+    if owo == "-": math = float(number1) - float(number2)
+    else:
+        if owo == ":" or "/": math = float(number1) / float(number2)
+        else:
+            if owo == "*" or "x": math = float(number1) * float(number2)
+            else:
+                if owo == "^": math = float(number1) ^ float(number2)
 
-if __name__ == "__main__":
-    main(args)
+
+
+print(math)

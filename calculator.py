@@ -18,7 +18,7 @@ while loop == "y" or "Y" or "":
                 if owo == ":" or "/" and number2 != "0":
                     math = float(number1) / float(number2)
                 else:
-                    if owo == "*" or "x":
+                    if owo == "*" or owo == "x":
                         math = float(number1) * float(number2)
                     else:
                         if owo == "^": math = float(number1) ^ float(number2)
